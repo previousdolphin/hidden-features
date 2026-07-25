@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features — Hidden Features</title>
+<meta name="description" content="A vault full of gizmos: secret buttons, hidden games, hoverable easter eggs and a Konami code that actually does something.">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- HEADER / NAV START -->
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="index.html">Hidden<span>Features</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html" class="active">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="cool-guy.html">Cool Guy</a></li>
+      <li><a href="snake-game-arcade.html">Snake Arcade</a></li>
+    </ul>
+    <a class="btn btn-pill nav-cta" href="pricing.html">Unlock Access</a>
+  </nav>
+</header>
+<!-- HEADER / NAV END -->
+
+<main>
+
+  <!-- PAGE INTRO SECTION START -->
+  <section class="hero hero-sm">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow fade-in">The vault, opened</p>
+      <h1 class="fade-in">A vault full of gizmos</h1>
+      <p class="hero-sub fade-in">Below is a working demo of the odd little mechanisms Hidden Features gives you: reveal-on-click buttons, hoverable jokes, collapsible secrets, and yes — a Konami code. Try everything. Nothing here bites.</p>
+    </div>
+  </section>
+  <!-- PAGE INTRO SECTION END -->
+
+  <!-- GAMES DETAIL SECTION START -->
+  <section class="section" id="games">
+    <div class="container">
+      <h2 class="section-heading fade-in">The three built-in games</h2>
+      <p class="section-sub fade-in">These ship inside every Hidden Features integration as living, playable proof that something is always lurking underneath.</p>
+      <div class="grid grid-3">
+        <article class="card glass fade-in">
+          <div class="card-icon" style="--icon-color: var(--accent-2)">🐍</div>
+          <h3>Snake</h3>
+          <p>A pixel-perfect grid-crawler bound to arrow keys. Included on every plan, from Peekaboo to Full Vault.</p>
+          <a class="card-link" href="snake-game-arcade.html">Open the arcade →</a>
+        </article>
+        <article class="card glass fade-in locked-card">
+          <div class="card-icon locked" style="--icon-color: var(--accent-3)">🏓</div>
+          <h3>Pong <span class="badge badge-lock">Locked</span></h3>
+          <p>Bring your own opponent, or challenge the wall. Unlocks on Sleight of Hand and above.</p>
+          <a class="card-link" href="pricing.html">Unlock this plan →</a>
+        </article>
+        <article class="card glass fade-in locked-card">
+          <div class="card-icon locked" style="--icon-color: var(--accent-3)">🎲</div>
+          <h3>Parcheesi <span class="badge badge-lock">Locked</span></h3>
+          <p>Four colors, four home rows, one very slow board game. Comes with Full Vault plans.</p>
+          <a class="card-link" href="pricing.html">Unlock this plan →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- GAMES DETAIL SECTION END -->
+
+  <!-- GIZMOS SECTION START -->
+  <section class="section gizmos-section">
+    <div class="container">
+      <h2 class="section-heading fade-in">Try the gizmos</h2>
+      <p class="section-sub fade-in">These are small, but they add up. Each one is a pattern you can wire into your own product with a single line of Hidden Features code.</p>
+
+      <div class="grid grid-3 gizmo-grid">
+
+        <!-- Secret click-counter button -->
+        <div class="card glass fade-in gizmo-card">
+          <h3>The Persistent Button</h3>
+          <p>Click it. Keep clicking. Something happens on the fifth click, we promise.</p>
+          <button class="btn btn-outline" id="secret-button" data-count="0">Click me (0/5)</button>
+          <p class="secret-message" id="secret-message" hidden>🎉 You found it. Persistence is basically the whole product.</p>
+        </div>
+
+        <!-- Hover tooltip joke -->
+        <div class="card glass fade-in gizmo-card">
+          <h3>The Suspicious Tooltip</h3>
+          <p>Hover the badge below. We built a whole tooltip system just for one joke.</p>
+          <span class="tooltip-trigger" data-tooltip="This tooltip has been load-bearing since 2019.">Hover me ⓘ</span>
+        </div>
+
+        <!-- Toggle switch demo -->
+        <div class="card glass fade-in gizmo-card">
+          <h3>The Reveal Switch</h3>
+          <p>Flip it to reveal a panel that has no business being this satisfying.</p>
+          <label class="switch">
+            <input type="checkbox" id="reveal-toggle">
+            <span class="switch-track"><span class="switch-thumb"></span></span>
+            <span class="switch-label">Reveal mode</span>
+          </label>
+          <div class="reveal-panel" id="demo-panel">
+            <p>Was this necessary? No. Was it fun to build? Also no, actually, CSS transitions on checkboxes are a nightmare. But here we are.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Accordion of hidden capabilities -->
+      <div class="accordion fade-in" id="accordion">
+        <h3 class="accordion-title">What else is hiding in here?</h3>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Custom triggers <span class="chevron">⌄</span></button>
+          <div class="accordion-panel">
+            <p>Bind any hidden feature to a keyboard shortcut, a click count, a scroll depth, or a specific user segment. If it can fire an event, it can unlock a secret.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Discovery analytics <span class="chevron">⌄</span></button>
+          <div class="accordion-panel">
+            <p>See exactly who found what, and how long it took them. Turns out your most engaged users are the ones mashing buttons at 2am.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Konami-code support <span class="chevron">⌄</span></button>
+          <div class="accordion-panel">
+            <p>Yes, the actual Konami code. Try it right now: ↑ ↑ ↓ ↓ ← → ← → on this page. We'll wait.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">White-label vaults <span class="chevron">⌄</span></button>
+          <div class="accordion-panel">
+            <p>On the Full Vault plan, hidden features can carry your own branding, so the surprise feels native to your product, not ours.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="konami-banner" id="konami-banner" hidden>🏆 Achievement unlocked: Old-School Cheater. You've earned a badge nobody can see either.</p>
+
+    </div>
+  </section>
+  <!-- GIZMOS SECTION END -->
+
+  <!-- STOCK PHOTO GAG SECTION START -->
+  <section class="section stock-section">
+    <div class="container">
+      <h2 class="section-heading fade-in">Our feature vault, visualized</h2>
+      <p class="section-sub fade-in">We were promised stock photos galore. We over-delivered.</p>
+      <div class="grid grid-3">
+        <!-- STOCK PHOTO PLACEHOLDER: swap for real photo of a team pointing at a whiteboard -->
+        <div class="stock-photo tall g4 fade-in"><span>Stock Photo #08 — Team Pointing At Whiteboard With No Visible Plan</span></div>
+        <!-- STOCK PHOTO PLACEHOLDER: swap for real photo of a person's feet on a desk -->
+        <div class="stock-photo tall g5 fade-in"><span>Stock Photo #56 — Feet On Desk, Laptop Balanced Precariously</span></div>
+        <!-- STOCK PHOTO PLACEHOLDER: swap for real photo of hands typing dramatically -->
+        <div class="stock-photo tall g6 fade-in"><span>Stock Photo #73 — Hands Typing With Unnecessary Dramatic Lighting</span></div>
+      </div>
+    </div>
+  </section>
+  <!-- STOCK PHOTO GAG SECTION END -->
+
+  <!-- FINAL CTA BAND START -->
+  <section class="section cta-band">
+    <div class="container cta-band-inner fade-in">
+      <h2>Found everything? There's more in the vault.</h2>
+      <p>Every plan unlocks more games, more gizmos, and more places to hide them.</p>
+      <a href="pricing.html" class="btn btn-pill btn-primary">Compare plans</a>
+    </div>
+  </section>
+  <!-- FINAL CTA BAND END -->
+
+</main>
+
+<!-- FOOTER START -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">Hidden<span>Features</span></div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="cool-guy.html">Cool Guy</a>
+      <a href="snake-game-arcade.html">Snake Arcade</a>
+    </nav>
+    <p class="footer-tag">Somewhere on this page is a secret. Or is there? &#128064;</p>
+  </div>
+  <p class="yvow-credit">Built with help from <a href="https://yourveryownweb.site" rel="noopener">YourVeryOwnWeb.site</a></p>
+</footer>
+<!-- FOOTER END -->
+
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

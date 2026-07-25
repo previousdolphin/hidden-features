@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake Game Arcade — Hidden Features</title>
+<meta name="description" content="Play a fully working Snake game, and peek at the locked Pong and Parcheesi cabinets waiting behind it.">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- HEADER / NAV START -->
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="index.html">Hidden<span>Features</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="cool-guy.html">Cool Guy</a></li>
+      <li><a href="snake-game-arcade.html" class="active">Snake Arcade</a></li>
+    </ul>
+    <a class="btn btn-pill nav-cta" href="pricing.html">Unlock Access</a>
+  </nav>
+</header>
+<!-- HEADER / NAV END -->
+
+<main>
+
+  <!-- ARCADE INTRO SECTION START -->
+  <section class="hero hero-sm">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow fade-in">The vault, cracked open</p>
+      <h1 class="fade-in">The Hidden Features Arcade</h1>
+      <p class="hero-sub fade-in">One cabinet is fully lit and playable. Two more are just sitting there, dark, waiting for a coin that isn't real. Insert your imagination anyway.</p>
+    </div>
+  </section>
+  <!-- ARCADE INTRO SECTION END -->
+
+  <!-- SNAKE CABINET SECTION START -->
+  <section class="section">
+    <div class="container">
+      <div class="cabinet cabinet-active fade-in">
+        <div class="cabinet-marquee">SNAKE — INSERT ARROW KEYS</div>
+        <div class="cabinet-screen">
+          <canvas id="snake-canvas" width="400" height="400" aria-label="Snake game canvas"></canvas>
+          <div class="cabinet-overlay" id="snake-overlay">
+            <p id="snake-overlay-text">Press an arrow key or tap Start to begin.</p>
+            <button class="btn btn-pill btn-primary" id="snake-start-btn">Start Game</button>
+          </div>
+        </div>
+        <div class="cabinet-hud">
+          <span>Score: <strong id="snake-score">0</strong></span>
+          <span>High score: <strong id="snake-highscore">0</strong></span>
+        </div>
+        <div class="cabinet-controls" aria-label="Touch controls">
+          <button class="dpad-btn" data-dir="up" aria-label="Move up">↑</button>
+          <div class="dpad-row">
+            <button class="dpad-btn" data-dir="left" aria-label="Move left">←</button>
+            <button class="dpad-btn" data-dir="down" aria-label="Move down">↓</button>
+            <button class="dpad-btn" data-dir="right" aria-label="Move right">→</button>
+          </div>
+        </div>
+        <p class="cabinet-caption">Arrow keys or WASD on desktop. On-screen pad on touch devices.</p>
+      </div>
+    </div>
+  </section>
+  <!-- SNAKE CABINET SECTION END -->
+
+  <!-- LOCKED CABINETS SECTION START -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-heading fade-in">Two more cabinets, dark for now</h2>
+      <p class="section-sub fade-in">These unlock on Sleight of Hand and Full Vault plans. Click the coin slot for a peek at what's waiting behind the glass.</p>
+
+      <div class="grid grid-2 locked-cabinet-grid">
+
+        <div class="cabinet cabinet-locked fade-in">
+          <div class="cabinet-marquee">PONG — LOCKED</div>
+          <div class="cabinet-screen cabinet-screen-dark" id="pong-screen">
+            <div class="cabinet-overlay" id="pong-overlay">
+              <p>🏓 Locked in the vault.</p>
+              <button class="btn btn-outline" id="unlock-pong" aria-expanded="false">Insert coin (peek)</button>
+            </div>
+            <div class="cabinet-reveal" id="pong-reveal" hidden>
+              <!-- STOCK PHOTO PLACEHOLDER: swap for a real screenshot of the Pong prototype -->
+              <div class="stock-photo cabinet-photo g5"><span>Stock Photo #61 — Two Paddles, One Ball, Infinite Rivalry</span></div>
+              <p>Two-paddle Pong with adjustable ball speed and a scoring streak counter. Unlocks with Sleight of Hand.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cabinet cabinet-locked fade-in">
+          <div class="cabinet-marquee">PARCHEESI — LOCKED</div>
+          <div class="cabinet-screen cabinet-screen-dark" id="parcheesi-screen">
+            <div class="cabinet-overlay" id="parcheesi-overlay">
+              <p>🎲 Locked in the vault.</p>
+              <button class="btn btn-outline" id="unlock-parcheesi" aria-expanded="false">Insert coin (peek)</button>
+            </div>
+            <div class="cabinet-reveal" id="parcheesi-reveal" hidden>
+              <!-- STOCK PHOTO PLACEHOLDER: swap for a real screenshot of the Parcheesi board -->
+              <div class="stock-photo cabinet-photo g6"><span>Stock Photo #77 — Four Colors, Four Home Rows, One Grudge</span></div>
+              <p>Full four-player Parcheesi board with dice-roll animation and a "safe zone" gloat button. Unlocks with Full Vault.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- LOCKED CABINETS SECTION END -->
+
+  <!-- FINAL CTA BAND START -->
+  <section class="section cta-band">
+    <div class="container cta-band-inner fade-in">
+      <h2>Ready for the whole arcade?</h2>
+      <p>Unlock Pong and Parcheesi for real — no imaginary coins required.</p>
+      <a href="pricing.html" class="btn btn-pill btn-primary">See plans &amp; pricing</a>
+    </div>
+  </section>
+  <!-- FINAL CTA BAND END -->
+
+</main>
+
+<!-- FOOTER START -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">Hidden<span>Features</span></div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="cool-guy.html">Cool Guy</a>
+      <a href="snake-game-arcade.html">Snake Arcade</a>
+    </nav>
+    <p class="footer-tag">Somewhere on this page is a secret. Or is there? &#128064;</p>
+  </div>
+  <p class="yvow-credit">Built with help from <a href="https://yourveryownweb.site" rel="noopener">YourVeryOwnWeb.site</a></p>
+</footer>
+<!-- FOOTER END -->
+
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>

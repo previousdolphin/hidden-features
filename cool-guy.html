@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cool Guy — Hidden Features</title>
+<meta name="description" content="Meet Cool Guy, the self-appointed Vault Keeper of Hidden Features, and the reason none of your buttons do what you expect.">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- HEADER / NAV START -->
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="index.html">Hidden<span>Features</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="cool-guy.html" class="active">Cool Guy</a></li>
+      <li><a href="snake-game-arcade.html">Snake Arcade</a></li>
+    </ul>
+    <a class="btn btn-pill nav-cta" href="pricing.html">Unlock Access</a>
+  </nav>
+</header>
+<!-- HEADER / NAV END -->
+
+<main>
+
+  <!-- MASCOT HERO SECTION START -->
+  <section class="hero hero-sm">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner cool-guy-hero">
+      <p class="eyebrow fade-in">Meet the vault keeper</p>
+      <h1 class="fade-in">This is Cool Guy. He decides what stays hidden.</h1>
+      <p class="hero-sub fade-in">Nobody at Hidden Features remembers hiring him. He showed up in the changelog one day, sunglasses on, and started rejecting feature-visibility requests. We let him keep the job.</p>
+
+      <div class="mascot-frame fade-in" id="mascot">
+        <!-- STOCK PHOTO PLACEHOLDER: swap for real photo of a confident man in sunglasses giving a thumbs up -->
+        <div class="stock-photo mascot-photo g3">
+          <span>Stock Photo #01 — Man In Sunglasses, Thumbs Up, Absolutely Not Our CEO</span>
+        </div>
+        <div class="mascot-shades" id="mascot-shades" aria-hidden="true">😎</div>
+      </div>
+      <p class="mascot-hint fade-in">Hover the frame. Cool Guy has layers.</p>
+    </div>
+  </section>
+  <!-- MASCOT HERO SECTION END -->
+
+  <!-- BIO SECTION START -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-heading fade-in">A brief, mostly true biography</h2>
+      <div class="grid grid-3">
+        <article class="card glass fade-in">
+          <h3>Origins</h3>
+          <p>Cool Guy was allegedly a beta tester for the original Snake build. Legend says he found the hidden trigger in fourteen seconds and has been insufferable about it ever since.</p>
+        </article>
+        <article class="card glass fade-in">
+          <h3>Job description</h3>
+          <p>Officially: "Vault Integrity Consultant." Unofficially: he leans against the Pong cabinet and decides who's earned the right to unlock Parcheesi.</p>
+        </article>
+        <article class="card glass fade-in">
+          <h3>Known weaknesses</h3>
+          <p>High-fives, dramatic lighting, and any UI element that makes a satisfying click sound. See below for a live demonstration.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- BIO SECTION END -->
+
+  <!-- INTERACTIVE HIGH FIVE SECTION START -->
+  <section class="section gizmos-section">
+    <div class="container">
+      <div class="card glass fade-in high-five-card">
+        <h3>Give Cool Guy a high-five</h3>
+        <p>He counts every one. He will never say why. Current tally is stored locally, just between you and him.</p>
+        <button class="btn btn-primary btn-pill" id="high-five-btn">✋ High-five Cool Guy</button>
+        <p class="high-five-count">High-fives given: <span id="high-five-total">0</span></p>
+      </div>
+    </div>
+  </section>
+  <!-- INTERACTIVE HIGH FIVE SECTION END -->
+
+  <!-- STOCK PHOTO GALLERY SECTION START -->
+  <section class="section stock-section">
+    <div class="container">
+      <h2 class="section-heading fade-in">Cool Guy's photo album</h2>
+      <p class="section-sub fade-in">He insisted these all go on the internet. We tried to talk him out of it.</p>
+      <div class="grid grid-3">
+        <!-- STOCK PHOTO PLACEHOLDER: swap for a real candid photo -->
+        <div class="stock-photo tall g1 fade-in"><span>Stock Photo #02 — Man Leaning On Arcade Cabinet, Aggressively Casual</span></div>
+        <!-- STOCK PHOTO PLACEHOLDER: swap for a real candid photo -->
+        <div class="stock-photo tall g2 fade-in"><span>Stock Photo #03 — Man Pointing At Chart That Isn't On Screen</span></div>
+        <!-- STOCK PHOTO PLACEHOLDER: swap for a real candid photo -->
+        <div class="stock-photo tall g4 fade-in"><span>Stock Photo #04 — Man Giving Thumbs Up To Off-Camera Colleague</span></div>
+      </div>
+    </div>
+  </section>
+  <!-- STOCK PHOTO GALLERY SECTION END -->
+
+  <!-- FINAL CTA BAND START -->
+  <section class="section cta-band">
+    <div class="container cta-band-inner fade-in">
+      <h2>Cool Guy approves of this next step.</h2>
+      <p>He nodded, once, which is a lot for him.</p>
+      <a href="pricing.html" class="btn btn-pill btn-primary">See plans &amp; pricing</a>
+    </div>
+  </section>
+  <!-- FINAL CTA BAND END -->
+
+</main>
+
+<!-- FOOTER START -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">Hidden<span>Features</span></div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="cool-guy.html">Cool Guy</a>
+      <a href="snake-game-arcade.html">Snake Arcade</a>
+    </nav>
+    <p class="footer-tag">Somewhere on this page is a secret. Or is there? &#128064;</p>
+  </div>
+  <p class="yvow-credit">Built with help from <a href="https://yourveryownweb.site" rel="noopener">YourVeryOwnWeb.site</a></p>
+</footer>
+<!-- FOOTER END -->
+
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
